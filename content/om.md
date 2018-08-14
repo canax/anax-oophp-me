@@ -3,6 +3,8 @@
 Om
 =========================
 
+Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+
 Denna webbplatsen är en del av kursen [XXX](https://dbwebb.se/kurser/XXX). Uppdatera så att länken går till kursens hemsida på dwebb.se.
 
 Några egna kloka ord om kursen?

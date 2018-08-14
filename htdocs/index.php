@@ -21,17 +21,18 @@ require ANAX_INSTALL_PATH . "/vendor/autoload.php";
 $di = new Anax\DI\DIMagic();
 $di->loadServices(ANAX_INSTALL_PATH . "/config/di");
 $app = $di;
+$di->set("app", $app);
 
 // Include user defined routes using programming-style.
-foreach (glob(ANAX_INSTALL_PATH . "/route/*.php") as $route) {
+foreach (glob(ANAX_INSTALL_PATH . "/router/*.php") as $route) {
     require $route;
 }
 
 // Leave to router to match incoming request to routes
-$response = $di->get("router")->handle(
-    $di->get("request")->getRoute(),
-    $di->get("request")->getMethod()
+$response = $app->router->handle(
+    $app->request->getRoute(),
+    $app->request->getMethod()
 );
 
 // Send the HTTP response with headers and body
-$di->get("response")->send($response);
+$app->response->send($response);

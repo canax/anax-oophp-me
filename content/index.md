@@ -1,8 +1,10 @@
 ---
-title: "My title"
+title: "Min fina titel"
 ---
 Min me-sida i kursen oophp
 =========================
+
+Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
 [FIGURE src="image/me.jpg?w=500" caption="Bild på mig"]
 
@@ -19,3 +21,5 @@ Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli a
 Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
 
 Vi syns och hörs i forum och chatt!
+
+/Mikael
