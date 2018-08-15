@@ -6,6 +6,7 @@ Revision history
 v1.0.4 (2018-08-15)
 ---------------------------------
 
+* Use only beta releases.
 * Update Makefile.
 
 
