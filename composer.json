@@ -1,6 +1,6 @@
 {
     "name" : "anax/anax-oophp-me",
-    "description": "A me page for the oophp course.",
+    "description": "A me page for the oophp course using Anax Flat.",
     "homepage": "https://github.com/canax/anax",
     "license": "MIT",
     "keywords": ["Anax", "dbwebb", "oophp"],
