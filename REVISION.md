@@ -3,6 +3,13 @@ Revision history
 
 
 
+v1.0.3 (2018-08-15)
+---------------------------------
+
+* Integrate with course ooph as example/redovisa.
+
+
+
 v1.0.2 (2018-08-14)
 ---------------------------------
 

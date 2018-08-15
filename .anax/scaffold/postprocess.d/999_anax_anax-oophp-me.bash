@@ -19,7 +19,7 @@ rm -f content/about.md
 rsync -a vendor/anax/anax-oophp-me/htdocs ./
 
 # Copy the source for Controllers.
-rsync -a vendor/anax/controller/src/Controller/{Development,ErrorHandler,FlatFileContent}Controller.php ./src/Controller/
+rsync -a vendor/anax/controller/src/Controller/{Development,ErrorHandler,FlatFileContent,Sample}Controller.php ./src/Controller/
 
 # Copy the source for Page.
 rsync -a vendor/anax/page/src/Page/Page.php ./src/Page/
