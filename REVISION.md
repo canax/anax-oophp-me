@@ -3,6 +3,20 @@ Revision history
 
 
 
+v1.0.7 (2018-08-28)
+---------------------------------
+
+* Include specific htaccess files.
+
+
+
+v1.0.6 (2018-08-16)
+---------------------------------
+
+* Fix what htaccess file is used as default.
+
+
+
 v1.0.6 (2018-08-16)
 ---------------------------------
 

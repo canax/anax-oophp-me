@@ -35,7 +35,3 @@ sedi "s/ | Anax/ | oophp/g" config/page.php
 
 # Remove htdocs/cimage/index.html to ease debugging
 rm -f htdocs/cimage/index.html
-
-# Fix what htaccess to use
-cp htdocs/.htaccess_wwwstudent htdocs/.htdocs
-#rm -f htdocs/.htaccess_*
