@@ -8,6 +8,7 @@ source .anax/scaffold/functions.bash
 
 # Get items from config/.
 rsync -a vendor/anax/anax-oophp-me/config ./
+rm -f config/navbar.php
 
 # Get items from content/.
 rsync -a vendor/anax/anax-oophp-me/content ./

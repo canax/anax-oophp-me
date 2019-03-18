@@ -53,5 +53,10 @@ return [
             "url" => "lek",
             "title" => "Testa och lek med test- och exempelprogram",
         ],
+        [
+            "text" => "Anax dev",
+            "url" => "dev",
+            "title" => "Anax development utilities",
+        ],
     ],
 ];
