@@ -17,9 +17,16 @@ rm -f content/about.md
 
 # Get items from htdocs/.
 rsync -a vendor/anax/anax-oophp-me/htdocs ./
+rm htdocs/css/style.css
+
+# Get/remove items from src/.
+rsync -a vendor/anax/anax-oophp-me/src ./
 
 # Copy the source for Controllers.
-rsync -a vendor/anax/controller/src/Controller/{Development,ErrorHandler,FlatFileContent,Sample}Controller.php ./src/Controller/
+#rsync -a vendor/anax/controller/src/Controller/{Development,ErrorHandler,FlatFileContent,Sample}Controller.php ./src/Controller/
+
+# Get the Makefile.
+rsync -a vendor/anax/anax-oophp-me/Makefile ./
 
 # Copy the source for Page.
 rsync -a vendor/anax/page/src/Page/Page.php ./src/Page/
@@ -29,9 +36,22 @@ rsync -a vendor/anax/anax-oophp-me/router ./
 
 # Get own copy of view files.
 rsync -a vendor/anax/view/view/anax/v2 ./view/anax/
+rsync -a vendor/anax/anax-oophp-me/view ./
+
+# Get own copy of view files.
+rsync -a vendor/anax/view/view/anax/v2 ./view/anax/
 
 # Change baseTitle
 sedi "s/ | Anax/ | oophp/g" config/page.php
 
 # Remove htdocs/cimage/index.html to ease debugging
 rm -f htdocs/cimage/index.html
+
+# 
+# # Get configuration for the cache.
+# # @TODO Move this to Anax Flat.
+# rsync -a vendor/anax/cache/config ./
+# 
+# # Get configuration for the flat file content.
+# # @TODO Move this to Anax Flat.
+# rsync -a vendor/anax/content/config ./
