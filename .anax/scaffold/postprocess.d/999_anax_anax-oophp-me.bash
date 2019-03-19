@@ -8,7 +8,6 @@ source .anax/scaffold/functions.bash
 
 # Get items from config/.
 rsync -a vendor/anax/anax-oophp-me/config ./
-#rm -f config/navbar.php
 
 # Get items from content/.
 rsync -a vendor/anax/anax-oophp-me/content ./
@@ -37,7 +36,6 @@ rsync -a vendor/anax/anax-oophp-me/router ./
 
 # Get own copy of view files.
 rsync -a vendor/anax/view/view/anax/v2 ./view/anax/
-rsync -a vendor/anax/anax-oophp-me/view ./
 
 # Change baseTitle
 sedi "s/ | Anax/ | oophp/g" config/page.php
