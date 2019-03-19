@@ -45,9 +45,9 @@ return [
             "title" => "Välj stylesheet.",
         ],
         [
-            "text" => "Verktyg",
-            "url" => "verktyg",
-            "title" => "Verktyg och möjligheter för utveckling.",
+            "text" => "Docs",
+            "url" => "dokumentation",
+            "title" => "Dokumentation av ramverk och liknande.",
         ],
         [
             "text" => "Test &amp; Lek",
