@@ -3,10 +3,11 @@ Revision history
 
 
 
-v2.0.0-beta.X (2019-03-19)
+v2.0.0-beta.3 (2019-03-19)
 ---------------------------------
 
 * Moved stylechooser and navigation to own modules.
+* Rearranged content/dokumentation.
 
 
 
