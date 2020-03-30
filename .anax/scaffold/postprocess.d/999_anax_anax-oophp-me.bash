@@ -34,6 +34,9 @@ rsync -a vendor/anax/page/src/Page/Page.php ./src/Page/
 # Get items from router/.
 rsync -a vendor/anax/anax-oophp-me/router ./
 
+# Remove unused routes
+rm -f config/router/000_application.php
+
 # Get own copy of view files.
 rsync -a vendor/anax/view/view/anax/v2 ./view/anax/
 
