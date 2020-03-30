@@ -3,6 +3,13 @@ Revision history
 
 
 
+v2.0.1 (2020-03-31)
+---------------------------------
+
+* Change the composition to depend on each anax module.
+
+
+
 v2.0.0 (2020-03-31)
 ---------------------------------
 
