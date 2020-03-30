@@ -30,7 +30,7 @@ WARN_COLOR	= \033[33;01m
 ACTION_MESSAGE = $(ECHO) "$(ACTION)---> $(1)$(NO_COLOR)"
 
 # Which makefile am I in?
-WHERE-AM-I = $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))
+WHERE-AM-I = "$(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))"
 THIS_MAKEFILE := $(call WHERE-AM-I)
 
 # Echo some nice helptext based on the target comment
@@ -255,7 +255,8 @@ install-tools-php:
 
 	curl -Lso $(PHPCBF) https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar && chmod 755 $(PHPCBF)
 
-	curl -Lso $(PHPMD) http://static.phpmd.org/php/latest/phpmd.phar && chmod 755 $(PHPMD)
+	curl -Lso $(PHPMD) https://github.com/phpmd/phpmd/releases/download/2.7.0/phpmd.phar && chmod 755 $(PHPMD)
+	# curl -Lso $(PHPMD) http://static.phpmd.org/php/latest/phpmd.phar && chmod 755 $(PHPMD)
 	# curl -Lso $(PHPMD) http://www.student.bth.se/~mosstud/download/phpmd.phar && chmod 755 $(PHPMD)
 
 	curl -Lso $(PHPLOC) https://phar.phpunit.de/phploc.phar && chmod 755 $(PHPLOC)
@@ -400,18 +401,6 @@ bats:
 
 # ------------------------------------------------------------------------
 #
-# Developer
-#
-# target: scaff-reinstall         - Reinstall using scaffolding processing scripts.
-.PHONY: scaff-reinstall
-scaff-reinstall:
-	@$(call HELPTEXT,$@)
-	#rm -rf -v !(composer.*|vendor|.anax); .anax/scaffold/postprocess.bash
-
-
-
-# ------------------------------------------------------------------------
-#
 # Theme
 #
 # target: theme                   - Do make build install in theme/ if available.
@@ -419,7 +408,7 @@ scaff-reinstall:
 theme:
 	@$(call HELPTEXT,$@)
 	[ ! -d theme ] || $(MAKE) --directory=theme build
-	rsync -a theme/htdocs/css htdocs/
+	rsync -a theme/build/css htdocs/
 
 
 
