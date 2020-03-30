@@ -7,6 +7,7 @@ v2.0.1 (2020-03-31)
 ---------------------------------
 
 * Change the composition to depend on each anax module.
+* Remove dependency to anax-flat and anax-lite.
 
 
 

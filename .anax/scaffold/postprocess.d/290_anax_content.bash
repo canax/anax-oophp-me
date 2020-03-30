@@ -2,7 +2,7 @@
 #
 # anax/content
 #
-# Create the setup in htdocs/cimage and the cache directory.
+# Setup content/ and related.
 #
 
 # Git file to ignore all cache files.
@@ -17,3 +17,6 @@ git_ignore_files="\
 install -d cache/anax
 chmod 777 cache/anax
 echo "$git_ignore_files" > cache/anax/.gitignore
+
+# Get configuration for the flat file content.
+rsync -a vendor/anax/content/config ./
