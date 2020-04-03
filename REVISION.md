@@ -3,6 +3,14 @@ Revision history
 
 
 
+v2.0.5 (2020-04-03)
+---------------------------------
+
+* Install shellcheck in .bin.
+* Add docker-compose.yaml to make it easy to run docker.
+
+
+
 v2.0.4 (2020-04-03)
 ---------------------------------
 
