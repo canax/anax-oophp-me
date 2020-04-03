@@ -362,7 +362,7 @@ behat:
 install-tools-bash:
 	@$(call HELPTEXT,$@)
 	# Shellcheck
-	curl -Ls https://github.com/koalaman/shellcheck/releases/download/latest/shellcheck-latest.linux.x86_64.tar.xz | tar -xJ -C build/ && rm -f bin/shellcheck && ln build/shellcheck-latest/shellcheck bin/
+	curl -Ls https://github.com/koalaman/shellcheck/releases/download/latest/shellcheck-latest.linux.x86_64.tar.xz | tar -xJ -C build/ && rm -f .bin/shellcheck && ln build/shellcheck-latest/shellcheck .bin/
 
 	# Bats
 	curl -Lso $(BIN)/bats-exec-suite https://raw.githubusercontent.com/sstephenson/bats/master/libexec/bats-exec-suite
